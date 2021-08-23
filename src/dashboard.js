@@ -12,17 +12,13 @@ import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import MapIcon from "@material-ui/icons/Map";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import BookmarksIcon from "@material-ui/icons/Bookmarks";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
 import SettingsIcon from "@material-ui/icons/Settings";
-import MailIcon from "@material-ui/icons/Mail";
 import Brightness3Icon from "@material-ui/icons/Brightness3";
 import Brightness7Icon from "@material-ui/icons/Brightness7";
 import { ThemeProvider } from "@emotion/react";
@@ -44,7 +40,7 @@ const AppBar = styled(MuiAppBar)(({ theme }) => ({
   transition: theme.transitions.create(["width", "margin"], {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
-  })
+  }),
 }));
 
 const Drawer = styled(MuiDrawer)(() => ({
@@ -105,14 +101,15 @@ export default function MiniDrawer() {
           <Divider />
           <List>
             <ListItem button>
-              <ListItemIcon sx={{minWidth:30}}>
-                <MapIcon />
+              <ListItemIcon sx={{ minWidth: 30, mb: 2 }}>
+                <BookmarksIcon fontSize="large" />
               </ListItemIcon>
               <ListItemText />
             </ListItem>
+
             <ListItem button>
-              <ListItemIcon sx={{minWidth:30}}>
-                <SettingsIcon />
+              <ListItemIcon sx={{ minWidth: 30 }}>
+                <SettingsIcon fontSize="large" />
               </ListItemIcon>
               <ListItemText />
             </ListItem>
