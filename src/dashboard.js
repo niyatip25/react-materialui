@@ -146,9 +146,23 @@ export default function MiniDrawer() {
                 label="API Key"
                 id="apikey"
               />
-              <Button type="submit" variant="contained" sx={{ mt: 3, mb: 2 }}>
-                Save
-              </Button>
+              <Box sx={{ display: "flex" }}>
+                <Button
+                  fullWidth
+                  variant="outlined"
+                  sx={{ mt: 3, mb: 2, mr: 2 }}
+                >
+                  Test
+                </Button>
+                <Button
+                  fullWidth
+                  type="submit"
+                  variant="contained"
+                  sx={{ mt: 3, mb: 2 }}
+                >
+                  Save
+                </Button>
+              </Box>
             </Box>
           </Paper>
         </Box>
