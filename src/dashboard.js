@@ -79,7 +79,7 @@ export default function MiniDrawer() {
                 marginRight: "36px",
               }}
             >
-              <MenuIcon />
+              <img src="../assets/faviconOktaTools.png" alt="okta-tools" />
             </IconButton>
             <Typography
               variant="h6"
